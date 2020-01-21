@@ -17,7 +17,39 @@ var trace1 = {
   hoverinfo: 'none',
 };
 
-var figure = { data: [trace1] };
+var figure = {
+  data: [trace1],
+  layout: {
+    title: "nuevo grafico",
+    font: {
+      family: "Courier New, monospace",
+      size: 10,
+      color: "#7f7f7f"
+    },
+    xaxis: {
+      title: "titlexaxis",
+      titlefont: {
+        size: 10
+      },
+      tickfont: {
+        size: 10
+      },
+      fixedrange: true,
+      range: [0, 10],
+      automargin: true
+    },
+    yaxis: {
+      title: "men",
+      titlefont: {
+        size: 10
+      },
+      tickfont: {
+        size: 10
+      },
+      automargin: true
+    }
+  }
+};
 
 var imgOpts = {
   format: "png",
